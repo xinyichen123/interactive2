@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clock</title>
+	<link href="clock-style.css" rel="stylesheet">
+</head>
+<body>
+<!--digital clock element-->
+<p id="digiClock"></p>
+
+<!--talking clock element-->
+<p id="talkClock"></p>
+
+<!--image clock element-->
+<img id="imgClock" scr="10.jpeg">
+
+<script>
+	//console log test
+	var today = new Date();
+	console.log(today);
+
+	// 1.digital clock
+	setInterval(function digitalClock(){
+		var today = new Date();
+		var hours = today.getHours();
+		var minutes = today.getMinutes();
+		var seconds = today.getSeconds();
+		
+		//formatting as HH:MM:SS
+		if (hours < 10) { hours = "0" + hours; }
+		if (minutes < 10) { minutes = "0" + minutes; }
+		if (seconds < 10) { seconds = "0" + seconds; }
+
+		var time = hours + ":" + minutes + ":" + seconds;
+
+		document.getElementById("digiClock").innerHTML = time;
+	}, 1000);
+
+
+	//2. onomatopeic clock
+	setInterval(function talkingClock(){
+		var today = new Date();
+		var hours = today.getHours();
+		var minutes = today.getMinutes();
+		var seconds = today.getSeconds();
+
+		// if current second is odd or even
+		if (seconds % 2) {
+			document.getElementById("talkClock").innerHTML = "Tick";
+		} else {
+			document.getElementById("talkClock").innerHTML = "Tock";
+		};
+	}, 1000);
+
+	//3. image clock
+	setInterval(function imageClock(){
+		var today = new Date();
+		var hours = today.getHours();
+		var minutes = today.getMinutes();
+		var seconds = today.getSeconds();
+	
+		if (seconds % 2) {
+			var myImage = document.getElementById("imgClock");
+			myImage.src = "地球.png"
+		} else{
+			var myImage = document.getElementById("imgClock");
+			myImage.src = "地球反向.png"
+		};
+	}, 1000);
+
+
+</script>
+
+</body>
+</html>
