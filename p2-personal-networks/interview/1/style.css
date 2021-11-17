@@ -1,0 +1,662 @@
+@font-face {
+	font-family: "poppins";
+	src: url("Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;;
+	font-family: 'poppins', sans-serif;
+	background-image: 
+
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: black;
+}
+
+.pig{
+	position: absolute;
+	left: 60px;
+	top: 199px;
+}
+.card{
+	position: relative;
+	width: 350px;
+	height: 600px;
+/*	background: #ccc;*/
+	border-radius: 20px;
+	display: flex;
+	/*align-items: center;*/
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card .circle{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card .circle::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+
+.card:hover .circle:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card .circle1{
+	position: absolute;
+	top: -50px;
+	left: -10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card .circle1::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card:hover .circle1:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card .circle2{
+	position: absolute;
+	top: 100px;
+	left: -370px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card .circle2::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card:hover .circle2:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card:hover img{
+	top: 75%;
+	left: 100%;
+	height: 500px;
+}
+.card .content{
+	position: relative;
+	width: 100%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card:hover .content{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card .content h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card .content p{
+	color: darkgrey;
+}
+.card .content a{
+	position: relative;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: white;
+	color: black;
+	margin-top: 10px; 
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700；
+}
+
+
+
+
+/*the second one*/
+.card2{
+	position: relative;
+	width: 350px;
+	height: 600px;
+/*	background: #ccc;*/
+	border-radius: 20px;
+	display: flex;
+	/*align-items: center;*/
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card2 .circle2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card2 .circle2::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+
+.card2:hover .circle2:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card2 .circle1{
+	position: absolute;
+	top: -50px;
+	left: 370px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card2 .circle1::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card2:hover .circle1:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card2 .circle2{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card2 .circle2::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card2:hover .circle2:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card2 img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card2:hover img{
+	top: 75%;
+	left: 100%;
+	height: 500px;
+}
+.card2 .content2{
+	position: relative;
+	width: 100%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card2:hover .content2{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card2 .content2 h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card2 .content2 p{
+	color: darkgrey;
+}
+.card2 .content2 a{
+	position: relative;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: white;
+	color: black;
+	margin-top: 10px; 
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700；
+}
+
+
+/*the 3rd one*/
+.card3{
+	position: relative;
+	width: 350px;
+	height: 600px;
+/*	background: #ccc;*/
+	border-radius: 20px;
+	display: flex;
+	/*align-items: center;*/
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card3 .circle3{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card3 .circle3::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+
+.card3:hover .circle3:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card3 .circle3{
+	position: absolute;
+	top: -50px;
+	left: 370px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card3 .circle3::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card3:hover .circle3:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card3 .circle3{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card3 .circle3::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card3:hover .circle3:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card3 img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card3:hover img{
+	top: 75%;
+	left: 100%;
+	height: 500px;
+}
+.card3 .content3{
+	position: relative;
+	width: 100%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card3:hover .content3{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card3 .content3 h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card3 .content3 p{
+	color: darkgrey;
+}
+.card3 .content3 a{
+	position: relative;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: white;
+	color: black;
+	margin-top: 10px; 
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700；
+}
+
+
+
+/*the 4th one*/
+.card4{
+	position: relative;
+	width: 350px;
+	height: 600px;
+/*	background: #ccc;*/
+	border-radius: 20px;
+	display: flex;
+	/*align-items: center;*/
+	border-radius: 20px;
+	transition: 0.5s;
+}
+.card4 .circle4{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card4 .circle4::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+
+.card4:hover .circle4:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card4 .circle4{
+	position: absolute;
+	top: -50px;
+	left: 370px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card4 .circle4::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card4:hover .circle4:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card4 .circle4{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card4 .circle4::before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: darkgrey;
+	clip-path: circle(120px at center);
+	transition: 0.5s;
+	box-shadow: 0 0 40px #ffff5b,
+	0 0 60px #ffff5b,
+	0 0 80px #ffff5b,
+	0 0 100px #ffff5b;
+}
+.card4:hover .circle4:before {
+	/*background-image: url(img-2.jpeg);*/
+	clip-path: circle(400px at center);
+	background: grey;
+}
+.card4 img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 300px;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.card4:hover img{
+	top: 75%;
+	left: 100%;
+	height: 500px;
+}
+.card4 .content4{
+	position: relative;
+	width: 100%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+}
+.card4:hover .content4{
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+.card4 .content4 h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: 1em;
+	margin-bottom: 5px;
+}
+.card4 .content4 p{
+	color: darkgrey;
+}
+.card4 .content4 a{
+	position: relative;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background: white;
+	color: black;
+	margin-top: 10px; 
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 700；
+}
+
+.button{
+	position: absolute;
+	top: 552px;
+    right: 530px;
+	width: 150px;
+	color: #000;
+	font-size: 27px;
+	padding: 12px 15px;
+	background: #a9a9a9;
+	border 0;
+	border-radius: 20px;
+	outline: none;
+	margin: 30px;
+}
+
